@@ -1,22 +1,22 @@
-import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import React from "react";
+import {TextInput, StyleSheet} from "react-native";
 
-const Title = ({text}) => {
+const Input = ({placeholder}) => {
     return (
-        <View>
-            <Text style={styles.title}>{text}</Text>
-        </View>
+        <TextInput placeholder={placeholder} style={styles.inputUsername}/>
+
     );
 };
 
+
 const styles = StyleSheet.create({
-    title: {
-      fontSize: 50,
-      fontWeight: 'bold',
-      color: 'white',
-      textAlign: 'center',
-      marginTop: 50,
-    },
+    inputUsername: {
+        borderColor: 'white',
+        borderWidth: 1,
+        margin: 10,
+        borderRadius: 10,
+        padding: 10,
+        },
 });
 
-export default Title;
+export default Input
